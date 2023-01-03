@@ -2,20 +2,27 @@
 <html>
 <head>
 <style>
-div {
+div.ex1 {
   width: 300px;
-  margin: auto;
-  border: 1px solid red;
+  background-color: yellow;
+}
+
+div.ex2 {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: lightblue;
 }
 </style>
 </head>
 <body>
 
-<h2>Use of margin: auto</h2>
-<p>You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:</p>
+<h2>Padding and element width - with box-sizing</h2>
 
-<div>
-This div will be horizontally centered because it has margin: auto;
+<div class="ex1">This div is 300px wide.</div>
+<br>
+
+<div class="ex2">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
 </div>
 
 </body>
