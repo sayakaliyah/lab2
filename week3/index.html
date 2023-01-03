@@ -2,28 +2,30 @@
 <html>
 <head>
 <style>
-div.ex1 {
-  width: 300px;
-  background-color: yellow;
-}
+p {outline-color:red;}
 
-div.ex2 {
-  width: 300px;
-  padding: 25px;
-  box-sizing: border-box;
-  background-color: lightblue;
-}
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
 </style>
 </head>
 <body>
 
-<h2>Padding and element width - with box-sizing</h2>
+<h2>The outline-style Property</h2>
 
-<div class="ex1">This div is 300px wide.</div>
-<br>
-
-<div class="ex2">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
-</div>
+<p class="dotted">A dotted outline</p>
+<p class="dashed">A dashed outline</p>
+<p class="solid">A solid outline</p>
+<p class="double">A double outline</p>
+<p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+<p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+<p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+<p class="outset">An outset outline. The effect depends on the outline-color value.</p>
 
 </body>
 </html>
