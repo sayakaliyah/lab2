@@ -2,44 +2,26 @@
 <html>
 <head>
 <style>
-div {
-  border: 3px solid #4CAF50;
-  padding: 5px;
-}
-
-.img1 {
-  float: right;
-}
-
-.img2 {
-  float: right;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+div ~ p {
+  background-color: yellow;
 }
 </style>
 </head>
 <body>
 
-<h2>Without Clearfix</h2>
+<h2>General Sibling Selector</h2>
 
-<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+<p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+<p>Paragraph 1.</p>
 
 <div>
-  <img class="img1" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  <p>Paragraph 2.</p>
 </div>
 
-<h2 style="clear:right">With New Modern Clearfix</h2>
-<p>Add the clearfix hack to the containing element, to fix this problem:</p>
-
-<div class="clearfix">
-  <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
-</div>
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
 
 </body>
 </html>
