@@ -1,44 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-ol {
-  counter-reset: section;
-  list-style-type: none;
-}
-
-li::before {
-  counter-increment: section;
-  content: counters(section,".") " ";
-}
-</style>
-</head>
 <body>
 
-<ol>
-  <li>item</li>
-  <li>item   
-  <ol>
-    <li>item</li>
-    <li>item</li>
-    <li>item
-    <ol>
-      <li>item</li>
-      <li>item</li>
-      <li>item</li>
-    </ol>
-    </li>
-    <li>item</li>
-  </ol>
-  </li>
-  <li>item</li>
-  <li>item</li>
-</ol>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
-<ol>
-  <li>item</li>
-  <li>item</li>
-</ol>
+<p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
 
 </body>
 </html>
