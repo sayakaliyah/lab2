@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style> 
-#rcorners1 {
-  border-radius: 25px;
-  background: #73AD21;
-  padding: 20px; 
-  width: 200px;
-  height: 150px;  
+<style>
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
 }
 
-#rcorners2 {
-  border-radius: 25px;
-  border: 2px solid #73AD21;
-  padding: 20px; 
-  width: 200px;
-  height: 150px;  
+#grad2 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
 }
 
-#rcorners3 {
-  border-radius: 25px;
-  background: url(paper.gif);
-  background-position: left top;
-  background-repeat: repeat;
-  padding: 20px; 
-  width: 200px;
-  height: 150px;  
+#grad3 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);
+}
+
+#grad4 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(90deg,red,yellow 7%,green 10%);
+}
+
+#grad5 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: repeating-linear-gradient(45deg, red 0px, red 10px, red 10px, yellow 10px, yellow 20px);
 }
 </style>
 </head>
 <body>
 
-<h1>The border-radius Property</h1>
+<h1>Repeating Linear Gradient</h1>
 
-<p>Rounded corners for an element with a specified background color:</p>
-<p id="rcorners1">Rounded corners!</p>
-<p>Rounded corners for an element with a border:</p>
-<p id="rcorners2">Rounded corners!</p>
-<p>Rounded corners for an element with a background image:</p>
-<p id="rcorners3">Rounded corners!</p>
+<div id="grad1"></div>
+
+<p>A repeating gradient on 45deg axe starting red and finishing green:</p>
+<div id="grad2"></div>
+
+<p>A repeating gradient on 190deg axe starting red and finishing green:</p>
+<div id="grad3"></div>
+
+<p>A repeating gradient on 90deg axe starting red and finishing green:</p>
+<div id="grad4"></div>
+
+<p>A repeating linear gradient with solid stripes:</p>
+<div id="grad5"></div>
 
 </body>
 </html>
