@@ -2,22 +2,23 @@
 <html>
 <body>
 
-<h1>JavaScript Numbers</h1>
-<h2>The Number() Method</h2>
+<h2>JavaScript Scope</h2>
 
-<p>The Number() metod converts a variable (or value) into a number:</p>
+<p><b>carName</b> is undefined outside myFunction():</p>
 
-<p id="demo"></p>
+<p id="demo1"></p>
+
+<p id="demo2"></p>
 
 <script>
-document.getElementById("demo").innerHTML =
-Number("3.14") + "<br>" +
-Number(Math.PI) + "<br>" +
-Number("    ") + "<br>" +
-Number("") + "<br>" +
-Number("99 88") + "<br>" +
-Number("John") + "<br>";
+myFunction();
+
+function myFunction() {
+  let carName = "Volvo";
+  document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+}
+
+document.getElementById("demo2").innerHTML = typeof carName;
 </script>
 
 </body>
-</html>
