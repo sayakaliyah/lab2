@@ -1,132 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
- background-color:linen; 
- }
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 70%;
-  margin: auto;
-  text-align: center;
-  background-color:white;
-}
-
-button {
-  border-color:linen;
-  border-style: solid;
-  display: inline-block;
-  padding: 10px;
-  color: white;
-  background-color: palevioletred;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 20px;
-}
-
-.container {
-  position: relative;
-  width: 50%;
-  margin: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: palevioletred;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-.text {
-  color: linen;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.profile {
- border-radius: 50%
-}
-
-h2 {
-color: palevioletred;
-}
-
-</style>
-</head>
 <body>
-<div class="card"> 
-  <h1><button><b><i>@bout_me</i></b></button></h1>
-  <img src="https://i.pinimg.com/236x/99/e7/d0/99e7d014c381bb287ce51bb5e1e81b32.jpg" class="profile" style="width: 10%">
-  <h2> <b>SAYAKA</b></h2>
-  <p> <b><i>bs computer science at apc<b></i></p>
-  <p> <b><i>i like cats, kpop, games & make up!<b></i></p>
-  <p><i>+ hover over the image for more info+</i></p>
-  <div class="container">
-  <img src="https://i.pinimg.com/564x/f9/b8/63/f9b8631d8d712b945b337ac9933862a4.jpg" class="image"  style="width: 100%">
-  <div class="overlay">
-    <div class="text">Experience: <br> Java, SQL, HTML, Python</div>
-  </div>
-</div>
 
-  <div class="container">
-  <img src="https://i.pinimg.com/564x/b3/41/7f/b3417fddf3c1b184728e8bc45ea3f875.jpg" class="image"  style="width: 100%">
-  <div class="overlay">
-    <div class="text">
-	Goals in Life: <br> To be financially stable where I can buy both needs and wants for my family and myself
-	</div>
-  </div>
-</div>
+<h2>JavaScript For Loop</h2>
 
- <div class="container">
-  <img src="https://i.pinimg.com/564x/73/37/c2/7337c262ba0811949e803164d1634fe1.jpg" class="image"  style="width: 100%">
-  <div class="overlay">
-    <div class="text">
-	What do you expect to learn from Web Programming? <br> Learn and recall previous and new HTML and CSS topics
-	</div>
-  </div>
-</div>
+<p id="demo"></p>
 
- <div class="container">
-  <img src="https://i.pinimg.com/564x/b1/a0/25/b1a025a61cd1de385bba97fba697c008.jpg" class="image"  style="width: 100%">
-  <div class="overlay">
-    <div class="text">
-	What do you want to learn to help you in your chosen Major? <br> I want to learn about how to handle data in my course and also web programming
-	</div>
-  </div>
-</div>
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 
-<p><i>images are all from pinterest!</i></p>
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
 
-  <div style="margin: 30px 0; margin-top: 10px;"> 
-	</div>
-</div>
+document.getElementById("demo").innerHTML = text;
+</script>
 
 </body>
 </html>
