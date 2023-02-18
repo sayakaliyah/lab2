@@ -228,6 +228,19 @@ echo "<br>";
 echo $gender;
 ?>
 
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+        $servername = "192.168.150.213";
+        $username = "webprogss211";
+        $password = "fancyR!ce36";
+        $dbname = "webprogss211";
+
+}
+
+?>
+
 
 </div>
 
